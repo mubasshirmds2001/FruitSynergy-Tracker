@@ -8,7 +8,7 @@ jackfruit
 java apple
 kiwi
 mango
-mosambi
+mousambi
 orange
 pear
 pineapple

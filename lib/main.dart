@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fruitsynergy_tracker/home.dart';
 import 'package:fruitsynergy_tracker/splash.dart';
 
 void main() {

@@ -84,10 +84,10 @@ class _HomePageState extends State<HomePage>{
     // Navigate to the ResultPage
 
     Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => ResultPage(image: image, result: v,nutritionInfo: nutritionInfo,),
-      ));
+        context,
+        MaterialPageRoute(
+          builder: (context) => ResultPage(image: image, result: v,nutritionInfo: nutritionInfo,),
+        ));
   }
 
   Future<NutritionInfo> _getNutritionInfo(String fruitName) async {
@@ -97,13 +97,13 @@ class _HomePageState extends State<HomePage>{
     for (var row in rows) {
       if (row[0].toString().toLowerCase() == fruitName.toLowerCase()) {
         return NutritionInfo(
-          row[0], // Fruit name
-          row[1].toString(), // Energy (kcal/kJ)
-          row[2].toString(), // Water (g)
-          row[3].toString(), // Protein (g)
-          row[4].toString(), // Total fat (g)
-          row[5].toString(), // Carbohydrates (g)
-          row[6].toString()// Fiber (g)
+            row[0], // Fruit name
+            row[1].toString(), // Energy (kcal/kJ)
+            row[2].toString(), // Water (g)
+            row[3].toString(), // Protein (g)
+            row[4].toString(), // Total fat (g)
+            row[5].toString(), // Carbohydrates (g)
+            row[6].toString()// Fiber (g)
         );
       }
     }
@@ -135,7 +135,7 @@ class _HomePageState extends State<HomePage>{
             ),
             _image == null
                 ? const Text(style: TextStyle(color:Colors.white, fontSize: 16.0, fontFamily: 'Poppins', fontWeight: FontWeight.w400),
-            'No image selected.')
+                'No image selected.')
                 : Image.file(File(_image!.path)),
             const SizedBox(height: 20),
             SizedBox(
@@ -161,8 +161,6 @@ class _HomePageState extends State<HomePage>{
   }
 }
 
-_getNutritionInfo(param0) {
-}
 
 class NutritionInfo {
   final String fruitName;
@@ -176,4 +174,3 @@ class NutritionInfo {
 
   NutritionInfo(this.fruitName, this.energy, this.water, this.protein, this.total_fat, this.carbohydrates, this.fiber);
 }
-

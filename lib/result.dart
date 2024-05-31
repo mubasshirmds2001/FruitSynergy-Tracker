@@ -1,6 +1,4 @@
-import 'package:csv/csv.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:fruitsynergy_tracker/home.dart';
 import 'dart:io';
 
@@ -11,7 +9,7 @@ class ResultPage extends StatelessWidget {
   final String result;
   final NutritionInfo nutritionInfo;
 
-  const ResultPage({required this.image, required this.result, required this.nutritionInfo});
+  const ResultPage({super.key, required this.image, required this.result, required this.nutritionInfo});
 
   @override
   Widget build(BuildContext context) {

@@ -33,7 +33,7 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin{
 
     Timer(const Duration(seconds: 4), () {
       Navigator.pushReplacement(context, MaterialPageRoute(
-          builder: (context) => LoadingScreen())); // Replace HomePage with your main page
+          builder: (context) => const LoadingScreen())); // Replace HomePage with your main page
     });
   }
 
