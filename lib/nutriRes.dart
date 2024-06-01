@@ -3,30 +3,59 @@ import 'package:fruitsynergy_tracker/home.dart';
 
 class NutriResPage extends StatelessWidget{
   final NutritionInfo nutritionInfo;
+  final String result;
 
-  const NutriResPage({super.key, required this.nutritionInfo});
+  const NutriResPage({super.key, required this.nutritionInfo, required this.result});
 
   @override
   Widget build(BuildContext context) {
+
+    const Map<String, String> fruitImages = {
+      'apple': 'assets/ClassImages/apple.jpeg',
+      'banana': 'assets/ClassImages/banana.jpeg',
+      'cherry': 'assets/ClassImages/cherry.jpeg',
+      'chikku': 'assets/ClassImages/chikku.jpg',
+      'grapes': 'assets/ClassImages/grapes.jpeg',
+      'guava': 'assets/ClassImages/guava.jpeg',
+      'jackfruit': 'assets/ClassImages/jackfruit.jpeg',
+      'java apple': 'assets/ClassImages/java apple.jpg',
+      'kiwi': 'assets/ClassImages/kiwi.jpeg',
+      'mango': 'assets/ClassImages/mango.jpeg',
+      'mousambi': 'assets/ClassImages/mousambi.jpg',
+      'orange': 'assets/ClassImages/orange.jpeg',
+      'pear': 'assets/ClassImages/pear.jpeg',
+      'pineapple': 'assets/ClassImages/pineapple.jpeg',
+      'pomegranate': 'assets/ClassImages/pomegranate.jpeg',
+      'strawberry': 'assets/ClassImages/strawberry.jpeg',
+      'watermelon': 'assets/ClassImages/watermelon.jpeg'
+    };
+
+    final String? imagePath = fruitImages[result];
+
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        title: const Text(
-          'Nutrition Information',
-          style: TextStyle(fontSize: 20, color: Colors.white),
+        title:  Text(
+          'Nutrition Facts of $result',
+          style: const TextStyle(fontSize: 20, color: Colors.white, fontFamily: 'Poppins'),
         ),
         backgroundColor: Colors.black,
         iconTheme: const IconThemeData(color: Colors.white),
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'Nutrition Facts',
-              style: TextStyle(fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 20),
+            if (imagePath != null)
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Image.asset(
+                  imagePath,
+                  width: 150, // Adjust as needed
+                  height: 150, // Adjust as needed
+                  fit: BoxFit.contain,
+                ),
+              ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Table(
@@ -55,14 +84,14 @@ class NutriResPage extends StatelessWidget{
           padding: const EdgeInsets.all(8.0),
           child: Text(
             title,
-            style: const TextStyle(fontSize: 18, color: Colors.white),
+            style: const TextStyle(fontSize: 16, color: Colors.white,fontFamily: 'Poppins'),
           ),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
             value,
-            style: const TextStyle(fontSize: 18, color: Colors.white),
+            style: const TextStyle(fontSize: 16, color: Colors.white,fontFamily: 'Poppins'),
           ),
         ),
       ],

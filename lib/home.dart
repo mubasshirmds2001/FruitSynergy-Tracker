@@ -53,6 +53,19 @@ class _HomePageState extends State<HomePage>{
     }
   }
 
+  Future<void> _clickImage() async {
+    try {
+      final XFile? pickedFile = await _picker.pickImage(source: ImageSource.camera);
+      setState(() {
+        _image = pickedFile;
+        file = File(pickedFile!.path);
+      });
+      detectimage(file!);
+    } catch (e) {
+      print('Error clicking image: $e');
+    }
+  }
+
   Future detectimage(File image) async {
     var output = await Tflite.runModelOnImage(
       path: image.path,
@@ -152,6 +165,23 @@ class _HomePageState extends State<HomePage>{
                   elevation: 5,
                 ),
                 child: const Text('Pick Image from Gallery',style: TextStyle(fontSize: 16.0, fontFamily: 'Poppins', fontWeight: FontWeight.w600)),
+              ),
+            ),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: 250,
+              height: 45,
+              child: ElevatedButton(
+                onPressed: _clickImage,
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  backgroundColor: const Color(0xFFC0E5C8),
+                  foregroundColor: Colors.black,
+                  elevation: 5,
+                ),
+                child: const Text('Open Camera',style: TextStyle(fontSize: 16.0, fontFamily: 'Poppins', fontWeight: FontWeight.w600)),
               ),
             ),
           ],

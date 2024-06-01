@@ -62,7 +62,7 @@ class ResultPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => NutriResPage(nutritionInfo: nutritionInfo),
+                    builder: (context) => NutriResPage(nutritionInfo: nutritionInfo, result:result),
                   ),
                 );
               },

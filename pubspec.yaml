@@ -75,6 +75,23 @@ flutter:
      - assets/icon/Icon_app.jpeg
      - assets/icon/wall.jpeg
      - assets/Fruits_Nutrition_Dataset.csv
+     - assets/ClassImages/apple.jpeg
+     - assets/ClassImages/banana.jpeg
+     - assets/ClassImages/cherry.jpeg
+     - assets/ClassImages/chikku.jpg
+     - assets/ClassImages/grapes.jpeg
+     - assets/ClassImages/guava.jpeg
+     - assets/ClassImages/jackfruit.jpeg
+     - assets/ClassImages/java apple.jpg
+     - assets/ClassImages/kiwi.jpeg
+     - assets/ClassImages/mango.jpeg
+     - assets/ClassImages/mousambi.jpg
+     - assets/ClassImages/orange.jpeg
+     - assets/ClassImages/pear.jpeg
+     - assets/ClassImages/pineapple.jpeg
+     - assets/ClassImages/pomegranate.jpeg
+     - assets/ClassImages/strawberry.jpeg
+     - assets/ClassImages/watermelon.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
