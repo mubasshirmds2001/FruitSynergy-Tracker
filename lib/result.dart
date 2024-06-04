@@ -25,7 +25,7 @@ class ResultPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(15.0),
+              padding: const EdgeInsets.all(30.0),
               child: SizedBox(
                 width: 350,
                 height: 350,

@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage>{
   loadmodel() async {
     print("Loading TFLite model");
     await Tflite.loadModel(
-      model: "assets/fruit_recognition_model.tflite",
+      model: "assets/fruit_recognition_model_v2_50.tflite",
       labels: "assets/fruit_classes.txt",
     );
     print("Model loaded");
@@ -76,10 +76,10 @@ class _HomePageState extends State<HomePage>{
     );
 
     var highConfidenceRecognitions =
-    output!.where((res) => res['confidence'] > 0.5).toList();
-
+    output?.where((res) => res['confidence'] > 0.5).toList();
+    print(highConfidenceRecognitions);
     setState(() {
-      if (highConfidenceRecognitions.isEmpty) {
+      if (highConfidenceRecognitions == null || highConfidenceRecognitions.isEmpty) {
         v = "Ambiguity in Image";
       } else {
         v = highConfidenceRecognitions.map((res) => res['label']).join(', ');
