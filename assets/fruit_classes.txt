@@ -1,17 +1,17 @@
-apple
-banana
-cherry
-chikku
-grapes
-guava
-jackfruit
-java apple
-kiwi
-mango
-mosambi
-orange
-pear
-pineapple
-pomegranate
-strawberry
-watermelon
+Apple
+Banana
+Cherry
+Chikku
+Grapes
+Guava
+Jackfruit
+Java Apple
+Kiwi
+Mango
+Mosambi
+Orange
+Pear
+Pineapple
+Pomegranate
+Strawberry
+Watermelon

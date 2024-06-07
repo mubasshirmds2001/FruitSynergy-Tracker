@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage>{
   loadmodel() async {
     print("Loading TFLite model");
     await Tflite.loadModel(
-      model: "assets/fruit_recognition_model_v2_50.tflite",
+      model: "assets/fruit_recognition_model.tflite",
       labels: "assets/fruit_classes.txt",
     );
     print("Model loaded");
