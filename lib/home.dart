@@ -93,13 +93,14 @@ class _HomePageState extends State<HomePage>{
     });
 
     NutritionInfo nutritionInfo = await _getNutritionInfo(v);
+    BenefitsInfo benefitsInfo = await _getBenefitsInfo(v);
 
     // Navigate to the ResultPage
 
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => ResultPage(image: image, result: v,nutritionInfo: nutritionInfo,),
+          builder: (context) => ResultPage(image: image, result: v,nutritionInfo: nutritionInfo,benefitsInfo: benefitsInfo),
         ));
   }
 
@@ -116,11 +117,28 @@ class _HomePageState extends State<HomePage>{
             row[3].toString(), // Protein (g)
             row[4].toString(), // Total fat (g)
             row[5].toString(), // Carbohydrates (g)
-            row[6].toString()// Fiber (g)
+            row[6].toString() // Fiber (g)
         );
       }
     }
     return NutritionInfo(fruitName, 'N/A', 'N/A', 'N/A', 'N/A','N/A', 'N/A'); // Default value if not found
+  }
+
+  Future<BenefitsInfo> _getBenefitsInfo(String fruitName) async {
+    final rawData = await rootBundle.loadString('assets/Fruits_Nutrition_Dataset.csv');
+    List<List<dynamic>> rows = const CsvToListConverter().convert(rawData);
+
+    // Iterate through each row to find the fruit name
+    for (var row in rows) {
+      if (row[0].toString().toLowerCase() == fruitName.toLowerCase()) {
+        if (row.length > 22) {
+          final benefits = row[22].toString();
+          return BenefitsInfo(benefits); // Extract the 23rd column (index 22)
+        }
+      }
+    }
+
+    return BenefitsInfo('N/A'); // Default value if not found
   }
 
   @override
@@ -189,6 +207,12 @@ class _HomePageState extends State<HomePage>{
       ),
     );
   }
+}
+
+class BenefitsInfo {
+  final String benefits;
+
+  BenefitsInfo(this.benefits);
 }
 
 

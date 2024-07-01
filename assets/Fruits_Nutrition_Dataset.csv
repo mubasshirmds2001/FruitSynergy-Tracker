@@ -1,17 +1,115 @@
-name,energy (kcal/kJ),water (g),protein (g),total fat (g),carbohydrates (g),fiber (g),sugars (g),calcium (mg),iron (mg),magnessium (mg),phosphorus (mg),potassium (mg),sodium (g),vitamin A (IU),vitamin C (mg),vitamin B1 (mg),vitamin B2 (mg),viatmin B3 (mg),vitamin B5 (mg),vitamin B6 (mg),vitamin E (mg)
-apple,48/200,86.7,0.27,0.13,12.7,1.3,10.1,5,0.07,4,11,90,0,38,4,0.019,0.028,0.091,0.071,0.037,0.05
-banana,89/371,74.91,1.09,0.33,22.84,2.6,12.23,5,0.26,27,22,358,1,64,8.7,0.031,0.073,0.665,0.334,0.367,0.1
-cherry,63/263,82.25,1.06,0.2,16.01,2.1,12.82,13,0.36,11,21,222,0,64,7,0.027,0.033,0.154,0.199,0.049,0.07
-grapes,69/288,80.54,0.72,0.16,18.1,0.9,15.48,10,0.36,7,20,191,2,66,10.8,0.069,0.07,0.188,0.05,0.086,0.19
-guava,68/285,80.8,2.55,0.95,14.32,5.4,8.92,18,0.26,22,40,417,2,624,228.3,0.067,0.04,1.084,0.451,0.11,0.73
-jackfruit,94/393,73.23,1.47,0.3,24.01,1.6,-,34,0.6,37,36,303,3,297,6.7,0.03,0.11,0.4,-,0.108,-
-java apple,46/100,93,0.7,0.3,11.6,2.5,0,29,0.3,5,8,123,0,61,20.3,10,-,5,-,-,-
-kiwi,61/255,83.07,1.14,0.52,14.66,3,8.99,34,0.31,17,34,312,3,87,92.7,0.027,0.025,0.341,0.183,0.063,1.46
-mango,65/272,81.71,0.51,0.27,17,1.8,14.8,10,0.13,9,11,156,2,765,27.7,0.058,0.057,0.584,0.16,0.134,1.12
-mousambi,45/100,90,0.8,0.1,8.4,0.4,9.5,14,0.9,6,14,117,15,90.2,30,-,-,-,-,-,-
-orange,47/197,86.75,0.94,0.12,11.75,2.4,9.35,40,0.1,10,14,181,0,225,53.2,0.087,0.04,0.282,0.25,0.06,0.18
-pear,58/242,83.71,0.38,0.12,15.46,3.1,9.8,9,0.17,7,11,119,1,23,4.2,0.012,0.025,0.157,0.048,0.028,0.12
-pineapple,50/209,86,0.54,0.12,13.12,1.4,9.85,13,0.29,12,8,109,1,58,47.8,0.079,0.032,0.5,0.213,0.112,0.02
-pomegranate,83/346,77.93,1.67,1.17,18.7,4,13.67,10,0.3,12,36,236,3,0,10.2,0.067,0.053,0.293,0.377,0.075,0.6
-strawberry,32/136,90.95,0.67,0.3,7.68,2,4.89,16,0.41,13,24,153,1,12,58.8,0.024,0.022,0.386,0.125,0.047,0.29
-watermelon,30/127,91.45,0.61,0.15,7.55,0.4,6.2,7,0.24,10,11,112,1,569,8.1,0.033,0.021,0.178,0.221,0.045,0.05
+name,energy (kcal/kJ),water (g),protein (g),total fat (g),carbohydrates (g),fiber (g),sugars (g),calcium (mg),iron (mg),magnessium (mg),phosphorus (mg),potassium (mg),sodium (g),vitamin A (IU),vitamin C (mg),vitamin B1 (mg),vitamin B2 (mg),viatmin B3 (mg),vitamin B5 (mg),vitamin B6 (mg),vitamin E (mg),benefits
+Apple,48/200,86.7,0.27,0.13,12.7,1.3,10.1,5,0.07,4,11,90,0,38,4,0.019,0.028,0.091,0.071,0.037,0.05,"1. Supports Weight Management
+2. Promotes Heart Health
+3. Reduces Diabetes Risk
+4. Enhances Gut Health
+5. Prevents From Cancer
+6. Supports Asthma Management
+7. Protects Brain Health
+8. Improves Mental Wellbeing
+9. Aids Digestive Issues"
+Banana,89/371,74.91,1.09,0.33,22.84,2.6,12.23,5,0.26,27,22,358,1,64,8.7,0.031,0.073,0.665,0.334,0.367,0.1,"1. Improves Blood Sugar Levels
+2. Supports Digestive Health
+3. Aids Weight Loss
+4. Supports Heart Health
+5. Improves Kidney Health
+6. Supports Exercise Recovery"
+Cherry,63/263,82.25,1.06,0.2,16.01,2.1,12.82,13,0.36,11,21,222,0,64,7,0.027,0.033,0.154,0.199,0.049,0.07,"1. Boosts Exercise Recovery
+2. Benefits Heart Health
+3. Improves Sleep Quality
+4. Rich in Antioxidants
+5. Rich in Anti-inflammatory Compounds
+6. Improves Symptoms of Arthritis"
+Chikoo,94/100,78,0.4,1.1,20,5.3,20,21,0.8,12,12,193,12,60,14.7,-,-,-,-,-,-,"1. Boosts Immunity
+2. Skin Benefits
+3. Hair Benefits
+4. Promotes Gut Health
+5. Good for Bones
+6. Cancer Benefits
+7. Reduces Blood Pressure"
+Grapes,69/288,80.54,0.72,0.16,18.1,0.9,15.48,10,0.36,7,20,191,2,66,10.8,0.069,0.07,0.188,0.05,0.086,0.19,"1. Benefits Heart Health
+2. High in Antioxidants
+3. Contains Anticancer Effects
+4. Protects Against Diabetes
+5. Benefits Eye Health
+6. Improves Memory, Attention
+7. Supports Bone Health
+8. Benefits Skin and Hair Health
+9. Improves Sleep Quality"
+Guava,68/285,80.8,2.55,0.95,14.32,5.4,8.92,18,0.26,22,40,417,2,624,228.3,0.067,0.04,1.084,0.451,0.11,0.73,"1. Lower Blood Sugar Levels
+2. Boosts Heart Health
+3. Benefits Digestive System
+4. Aid Weight Loss
+5. Boosts Immunity Power
+6. Good for Skin
+7. Anticancer benefits"
+Jackfruit,94/393,73.23,1.47,0.3,24.01,1.6,-,34,0.6,37,36,303,3,297,6.7,0.03,0.11,0.4,-,0.108,-,"1. Blood Sugar Control
+2. Preventing Skin Problems
+3. Benefit Heart Health
+4. Boosts Immune Health
+5. Protects Against Diseases"
+Kiwi,61/255,83.07,1.14,0.52,14.66,3,8.99,34,0.31,17,34,312,3,87,92.7,0.027,0.025,0.341,0.183,0.063,1.46,"1. Benefit Heart Health
+2. Benefits Digestive Health
+3. Rich in Nutrients
+4. Supports Healthy Skin
+5. Boosts Immune System
+6. Blood Sugar Control
+7. Supports Eye Health"
+Mango,65/272,81.71,0.51,0.27,17,1.8,14.8,10,0.13,9,11,156,2,765,27.7,0.058,0.057,0.584,0.16,0.134,1.12,"1. Prevents from Diabetes
+2. Immune Boosting Nutrients
+3. Supports Heart Health
+4. Improves Digestive Health
+5. Supports Eye Health
+6. Anticancer Benefits"
+Mosambi,45/100,90,0.8,0.1,8.4,0.4,9.5,14,0.9,6,14,117,15,90.2,30,-,-,-,-,-,-,"1. Helps in Digestion
+2. Prevents Gum and Teeth Diseases
+3. Recovers Immune System
+4. Promotes Bone Health
+5. Good for Eyes, Skin and Hair
+6. Aids Weight Control
+7. Maintains Sugar Levels
+8. Aids Liver Functioning
+9. Boosts Blood Circulation"
+Orange,47/197,86.75,0.94,0.12,11.75,2.4,9.35,40,0.1,10,14,181,0,225,53.2,0.087,0.04,0.282,0.25,0.06,0.18,"1. Promotes Heart Health
+2. Protects Against Chronic Diseases
+3. Weight Management
+4. Immune System Support
+5. Supports Eye Health
+6. Good for Eye health
+7. Cancer Prevention
+8. Digestive health"
+Pear,58/242,83.71,0.38,0.12,15.46,3.1,9.8,9,0.17,7,11,119,1,23,4.2,0.012,0.025,0.157,0.048,0.028,0.12,"1. Promotes Gut Health
+2. Offers Anticancer Effects
+3. Help to Lose Weight
+4. Supports Heart Health
+5. Aids in Weight Loss
+6. Rich in Antioxidants
+7. Reduces risk of Stroke
+8. Reduces risk of Heart Disease"
+Pineapple,50/209,86,0.54,0.12,13.12,1.4,9.85,13,0.29,12,8,109,1,58,47.8,0.079,0.032,0.5,0.213,0.112,0.02,"1. Helps in Digestion
+2. Anti-Cancer Properties
+3. Boosts Immunity
+4. Supports Eye Health
+5. Supports Bone Health
+6. Supports Healthy Skin
+7. Supports Healthy Muscles"
+Pomegranate,83/346,77.93,1.67,1.17,18.7,4,13.67,10,0.3,12,36,236,3,0,10.2,0.067,0.053,0.293,0.377,0.075,0.6,"1. Supports Digestive Health
+2. Good for Brain
+3. Support Urinary Health
+4. Anticancer Effects
+5. Rich in Antioxidants
+6. Supports Heart Health
+7. Supports Bone Health"
+Strawberry,32/136,90.95,0.67,0.3,7.68,2,4.89,16,0.41,13,24,153,1,12,58.8,0.024,0.022,0.386,0.125,0.047,0.29,"1. Supports Heart Health
+2. Blood Sugar Regulation
+3. Cancer Prevention
+4. Weight Management
+5. Digestive Health
+6. Skin and Hair Benefits"
+Watermelon,30/127,91.45,0.61,0.15,7.55,0.4,6.2,7,0.24,10,11,112,1,569,8.1,0.033,0.021,0.178,0.221,0.045,0.05,"1. Anticancer Effects
+2. Supports Heart Health
+3. Supports Bone Health
+4. Skin Benefits
+5. Digestive Health
+6. Weight Management
+7. Eye health"

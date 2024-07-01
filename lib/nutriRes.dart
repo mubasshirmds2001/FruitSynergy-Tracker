@@ -14,11 +14,10 @@ class NutriResPage extends StatelessWidget{
       'Apple': 'assets/ClassImages/Apple.jpeg',
       'Banana': 'assets/ClassImages/Banana.jpeg',
       'Cherry': 'assets/ClassImages/Cherry.jpeg',
-      'Chikku': 'assets/ClassImages/Chikku.jpg',
+      'Chikoo': 'assets/ClassImages/Chikoo.jpg',
       'Grapes': 'assets/ClassImages/Grapes.jpeg',
       'Guava': 'assets/ClassImages/Guava.jpeg',
       'Jackfruit': 'assets/ClassImages/Jackfruit.jpeg',
-      'Java Apple': 'assets/ClassImages/Java Apple.jpg',
       'Kiwi': 'assets/ClassImages/Kiwi.jpeg',
       'Mango': 'assets/ClassImages/Mango.jpeg',
       'Mosambi': 'assets/ClassImages/Mosambi.jpg',
@@ -48,7 +47,7 @@ class NutriResPage extends StatelessWidget{
           children: <Widget>[
             Text(
               '$result Fruit',
-              style: TextStyle(fontSize: 28, color: Colors.white, fontFamily: 'Poppins'),
+              style: const TextStyle(fontSize: 28, color: Colors.yellow, fontFamily: 'Poppins'),
             ),
             if (imagePath != null)
               Padding(

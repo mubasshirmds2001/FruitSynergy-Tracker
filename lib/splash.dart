@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:fruitsynergy_tracker/home.dart';
 import 'package:fruitsynergy_tracker/loadingScreen.dart';
 
 class Splash extends StatefulWidget{
@@ -33,7 +34,7 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin{
 
     Timer(const Duration(seconds: 4), () {
       Navigator.pushReplacement(context, MaterialPageRoute(
-          builder: (context) => const LoadingScreen())); // Replace HomePage with your main page
+          builder: (context) => const HomePage())); // Replace HomePage with your main page
     });
   }
 
@@ -55,7 +56,7 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin{
               SizedBox(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height,
-                child: Image.asset("assets/icon/wall.jpeg",fit: BoxFit.fill),
+                child: Image.asset("assets/icon/wall.jpeg",fit: BoxFit.cover),
               ),
               ],
           ),

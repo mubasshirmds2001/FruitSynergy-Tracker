@@ -70,7 +70,6 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/fruit_recognition_model_v2_50.tflite
      - assets/fruit_recognition_model.tflite
      - assets/fruit_classes.txt
      - assets/icon/Icon_app.jpeg
@@ -79,11 +78,10 @@ flutter:
      - assets/ClassImages/Apple.jpeg
      - assets/ClassImages/Banana.jpeg
      - assets/ClassImages/Cherry.jpeg
-     - assets/ClassImages/Chikku.jpg
+     - assets/ClassImages/Chikoo.jpg
      - assets/ClassImages/Grapes.jpeg
      - assets/ClassImages/Guava.jpeg
      - assets/ClassImages/Jackfruit.jpeg
-     - assets/ClassImages/Java Apple.jpg
      - assets/ClassImages/Kiwi.jpeg
      - assets/ClassImages/Mango.jpeg
      - assets/ClassImages/Mosambi.jpg
