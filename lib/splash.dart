@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:fruitsynergy_tracker/home.dart';
-import 'package:fruitsynergy_tracker/loadingScreen.dart';
 
 class Splash extends StatefulWidget{
   const Splash({super.key});
